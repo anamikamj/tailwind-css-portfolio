@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>tailwind CSS Demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gradient-to-r from-blue-900 via purple-400 to-purple-500 scroll-smooth">
+    
+    </section>
+    <!-- Home Section -->
+    <header class="bg-gray-900">
+      <nav class="mb-4 text-md">
+        <ul class="flex gap-5 justify-center p-4">
+          <li><a href="#home" class="text-blue-500 hover:underline">Home</a></li>
+          <li><a href="#about" class="text-blue-500 hover:underline">About Me</a></li>
+          <li><a href="#projects" class="text-blue-500 hover:underline">Projects</a></li>
+          <li><a href="#contact" class="text-blue-500 hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home"
+      class="min-h-screen flex flex-col justify-center items-center text-center text-white px-4 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700">
+      <div class="mb-4">
+        <h1 class="text-5xl font-bold mb-4">ANAMIKA M J</h1>
+        <p class="text-xl max-w-xl">Web developer</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img
+          class="rounded-full border border-purple-500 shadow-lg p-4 m-4 w-40 h-40 object-cover"
+          src="myimage.jpeg"
+          alt="Professional photo"
+        />
+        <p class="text-xl max-w-xl p-4 m-4">
+          A passionate web developer on a journey to build beautiful and
+          impactful websites.
+        </p>
+        <button
+          class="mt-6 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-800"
+        >
+          Download Resume
+        </button>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section id="about" class="flex flex-col md:flex-row items-center p-8">
+      <div class="mt-4 md:mt-0 md:ml-6 text-center">
+        <h2 class="text-4xl font-bold text-black-800">About Me</h2>
+        <p class="text-black-600 text-lg mt-3 text-justify">
+          I am a second-year Computer Science and Engineering student with a strong interest in technology and software development.
+          I have been actively learning and building my skills in areas like programming, web development, and basic software engineering concepts.
+          Alongside my academic curriculum, I constantly work on improving my practical knowledge through hands-on projects and exploring different domains within computer science.
+
+        </p>
+        <p class="text-black-600 text-lg mt-3 text-justify">
+          I am passionate about various fields in computer science, including web development, problem-solving through programming, data structures and algorithms, and exploring the
+           basics of machine learning and cybersecurity. My goal is to develop into a well-rounded software engineer, capable of building efficient applications and solving real-world problems. 
+           I aim to participate in internships, coding contests, and workshops to gain practical experience and eventually secure a challenging role in the tech industry where I can continuously grow and contribute.
+          
+        </p>
+        
+      </div>
+    </section>
+    <section class="max-w-sm mx-auto bg-blue-200 border border-red-500 rounded-lg p-6">
+      <h2 class="text-3xl font-bold text-center">Skills</h2>
+      <div class="mt-4">
+        <span
+          class="inline-block bg-blue-100 text-blue-800 px-3 py-2 rounded-full text-sm m-2"
+          >HTML</span
+        >
+        <span
+          class="inline-block bg-blue-100 text-blue-800 px-3 py-2 rounded-full text-sm m-2"
+          >CSS</span
+        >
+        <span
+          class="inline-block bg-blue-100 text-blue-800 px-3 py-2 rounded-full text-sm m-2"
+          >Tailwind</span
+        >
+        <span
+          class="inline-block bg-blue-100 text-blue-800 px-3 py-2 rounded-full text-sm m-2"
+          >JS</span>
+        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-2 rounded-full text-sm m-2">Python</span>
+        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-2 rounded-full text-sm m-2">C</span>
+        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-2 rounded-full text-sm m-2">SQL</span>
+
+
+      </div>
+    </section>
+
+    <section class="max-w-sm mx-auto mt-4 mb-4 px-6 py-12 bg-blue-200 text-blue-900 rounded-lg border border-red-500">
+      <h2 class="text-3xl text-black font-bold mb-6 text-center">Education</h2>
+      <ul class="space-y-4 max-w-2xl mx-auto">
+        <li>
+          <h3 class="text-xl font-bold">Model Engineering College</h3>
+          <p class="text-sm">B.Tech in Computer Science (2024 – Present)</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-bold">Bharatiya Vidya Bhavans Vidya Mandir</h3>
+          <p class="text-sm">Class 11-12, Science Stream (2022 – 2024)</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-bold">Bharatiya Vidya Bhavans Vidya Mandir</h3>
+          <p class="text-sm">Class LKG-10 (2010 – 2022)</p>
+        </li>
+      </ul>
+    </section>
+    
+
+    
+
+    <!-- Project  -->
+    <section id="projects" class="p-8 min-h-screen flex flex-col justify-center items-center text-center">
+      <h2 class="text-4xl font-bold text-center mb-8">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-12">
+
+        <!-- Projects card -->
+        <div
+          class="bg-blue-200 shadow-lg rounded-lg overflow-hidden p-6 hover:shadow-4xl hover:scale-105 hover:translate-y-1 transition transform duration-300 "
+        >
+          <h3 class="text-xl font-semibold text-black text-center">
+            Personal Portfolio Website
+          </h3>
+          <img class=" border-black-500 shadow-lg p-4 m-4 w-40 h-40 object-cover mx-auto" src="web.jpg" alt="Professional photo"/>
+          <p class="text-blue-800 mt-2 text-center">
+            I have created a personal responsive website with a sidebar menu and modern design using HTML, CSS, and JavaScript and have also linked it with firebase.
+          </p>
+          <div class="mt-4 flex justify-between items-center">
+            
+            <button
+              class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mx-auto"
+            >
+              View
+            </button>
+          </div>
+        </div>
+
+        <!-- Projects card -->
+        <div
+          class="bg-blue-200 shadow-lg rounded-lg overflow-hidden p-6 hover:shadow-4xl hover:scale-105 hover:translate-y-1 transition transform duration-300"
+        >
+          <h3 class="text-xl font-semibold text-black text-center">
+            Todo List
+          </h3>
+          <img class=" border-black-500 shadow-lg p-4 m-4 w-40 h-40 object-cover mx-auto" src="todo.jpg" alt="Professional photo"/>
+          <p class="text-blue-800 mt-2 text-center">
+            A simple task tracker that allows users to add and delete daily tasks. Data stored in local storage          </p>
+          <div class="mt-4 flex justify-between items-center">
+            
+            <button
+              class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mx-auto mt-6"
+            >
+              View
+            </button>
+          </div>
+        </div>
+
+        <!-- Projects card -->
+        <div
+          class="bg-blue-200 shadow-lg rounded-lg overflow-hidden p-6 hover:shadow-4xl hover:scale-105 hover:translate-y-1 transition transform duration-300"
+        >
+          <h3 class="text-xl font-semibold text-black text-center">
+            Health Monitoring App
+          </h3>
+          <img class=" border-black-500 shadow-lg p-4 m-4 w-40 h-40 object-cover mx-auto" src="health.jpg" alt="Professional photo"/>
+
+          <p class="text-blue-800 mt-2 text-center">
+            A health monitoring app is a digital tool designed to track, analyze, and offer insights into an individual’s health metrics and wellness activities.
+          </p>
+          <div class="mt-4 flex justify-between items-center">
+            
+            <button
+              class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mx-auto "
+            >
+              View
+            </button>
+          </div>
+        </div>
+      </section>
+        
+
+    <!-- Contact form -->
+    <section id="contact" class="p-8 ">
+      <h2 class="text-4xl text-black font-bold text-center mb-8">Contact Me</h2>
+      <div class="max-w-md mx-auto bg-gray-800 p-8">
+        <form class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-white mb-1">Name</label>
+            <input class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border" placeholder="Your name" type="text"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-white mb-1">Email</label>
+            <input class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border" placeholder="sample@gmail.com"type="text"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-white mb-1"
+              >Message</label
+            >
+            <input
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border"
+              placeholder="Enter your message"
+              type="text"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full mt-6 bg-blue-500 text-white px-6 py-3 rounded-lg hover:scale-105 transition transform duration-500"
+            >
+            Send message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    
+
+  
+    <!-- Button -->
+    <!--<button
+      class="mt-5 bg-blue-500 text-white px-6 py-3 rounded-lg hover:scale-105 transition transform duration-500"
+    >
+      Explore Page
+    </button>-->
+
+    <!-- Loading button -->
+    <!--<button
+      class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300 disable"
+    >
+      <span
+        class="animate-spin inline-block w-4 h-4 border-2 border-white border-r-transparent rounded-full mr-2"
+      ></span>
+      Loading...
+    </button>-->
+
+    <!-- Gradient button -->
+    <!--<button
+      class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-blue-800 hover:to-purple-800 transition duration-500"
+    >
+      Get Started
+    </button>-->
+  </body>
+</html>
+
+
+​
